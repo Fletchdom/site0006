@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日本影视片库 - 日本电影日剧动漫综艺纪录片高清在线观看索引</title>
+    <meta name="keywords" content="日本影视片库,日本电影片库,日本日剧片库,日本动漫电影,日本综艺纪录片,日本电影高清在线观看,日本影视分类,日本电影推荐" />
+    <meta name="description" content="日本影视片库收录日本电影、日剧、动漫电影、综艺纪录片等 80+ 高清资源条目，支持按频道、热度、评分和年份筛选，快速发现日系精品内容。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="library">
+    <header class="site-header">
+      <a class="brand" href="./index.html"><strong>日影青空站</strong><span>Nihon Aozora Screen</span></a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html">首页精选</a>
+        <a class="active" href="./library.html">全部片库</a>
+        <a href="./library.html?kind=电影">日本电影</a>
+        <a href="./library.html?kind=日剧">热门日剧</a>
+        <a href="./library.html?kind=动漫电影">动漫剧场</a>
+        <a href="./library.html?kind=综艺纪录">综艺纪录</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Aozora Library</p>
+        <h1>日本影视全片库</h1>
+        <p>在同一个页面筛选日本电影、日剧、动漫电影、综艺纪录片，按热度、评分和年份快速找到想看的内容。</p>
+      </section>
+
+      <section class="filters">
+        <button data-kind="全部">全部</button>
+        <button data-kind="电影">电影</button>
+        <button data-kind="日剧">日剧</button>
+        <button data-kind="动漫电影">动漫电影</button>
+        <button data-kind="综艺纪录">综艺纪录</button>
+        <select id="sortSelect" aria-label="排序方式">
+          <option value="hot">热度优先</option>
+          <option value="score">评分优先</option>
+          <option value="year">年份优先</option>
+        </select>
+      </section>
+
+      <section class="section compact">
+        <div class="section-head">
+          <div><p class="eyebrow">Results</p><h2 id="libraryTitle">全部日本影视资源</h2></div>
+          <span class="count" id="resultCount">0 部内容</span>
+        </div>
+        <div class="poster-grid library-grid" id="libraryGrid"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-brand"><strong>日影青空站</strong><p>日本影视资料、榜单和高清观影推荐整理平台。</p></div>
+      <div><h3>频道</h3><a href="./library.html?kind=电影">日本电影</a><a href="./library.html?kind=日剧">热门日剧</a><a href="./library.html?kind=动漫电影">动漫剧场</a></div>
+      <div><h3>榜单</h3><a href="./library.html?sort=score">高分榜</a><a href="./library.html?sort=year">新片新剧</a></div>
+      <div><h3>版权</h3><p>Copyright © 2026 日影青空站. All Rights Reserved.</p></div>
+    </footer>
+    <script src="./items.js?v=20260707-site0006"></script>
+    <script src="./app.js?v=20260707-site0006"></script>
+  </body>
+</html>
