@@ -60,13 +60,13 @@ h1,h2,h3,p { margin-top: 0; }
   width: min(1420px, calc(100% - 32px));
   margin: 24px auto 0;
   display: grid;
-  grid-template-columns: minmax(300px, .92fr) minmax(250px, .48fr) minmax(230px, .34fr);
+  grid-template-columns: minmax(320px, .78fr) minmax(0, 1.22fr);
   gap: 16px;
   align-items: stretch;
 }
 .hero-copy {
-  min-height: 430px;
-  padding: clamp(26px, 5vw, 62px);
+  min-height: 360px;
+  padding: clamp(24px, 4vw, 46px);
   border: 1px solid var(--line);
   border-radius: 8px;
   background: linear-gradient(135deg, #fff, #f1fbfb 56%, rgba(246,207,85,.22));
@@ -75,7 +75,7 @@ h1,h2,h3,p { margin-top: 0; }
   align-content: center;
 }
 .eyebrow { margin-bottom: 10px; color: var(--cyan); font-size: .74rem; font-weight: 950; text-transform: uppercase; letter-spacing: 0; }
-h1 { margin-bottom: 14px; font-size: clamp(2.1rem, 4.8vw, 5.2rem); line-height: 1.02; letter-spacing: 0; }
+h1 { margin-bottom: 14px; font-size: clamp(2rem, 3.7vw, 4.1rem); line-height: 1.04; letter-spacing: 0; }
 h2 { margin-bottom: 0; font-size: clamp(1.35rem, 2.2vw, 2.25rem); line-height: 1.15; }
 .hero-copy p:not(.eyebrow),.page-hero p,.poster-info p,.feature-copy small,.detail-copy p,.footer p { color: var(--muted); line-height: 1.72; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
@@ -84,7 +84,7 @@ h2 { margin-bottom: 0; font-size: clamp(1.35rem, 2.2vw, 2.25rem); line-height: 1
 .button.ghost { color: var(--blue); background: #fff; }
 
 .hero-stage {
-  min-height: 430px;
+  min-height: 360px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: var(--shadow);
@@ -105,10 +105,15 @@ h2 { margin-bottom: 0; font-size: clamp(1.35rem, 2.2vw, 2.25rem); line-height: 1
 .hero-stage b { font-size: 1.25rem; }
 .hero-stage em { margin-top: 4px; color: rgba(255,255,255,.76); }
 
-.hero-rail { display: grid; gap: 12px; }
+.hero-rail {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
 .hero-rail a {
   position: relative;
-  min-height: 96px;
+  min-height: 118px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 10px 28px rgba(35,50,70,.12);
