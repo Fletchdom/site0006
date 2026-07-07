@@ -6,7 +6,7 @@ function escapeAttr(value) {
   return String(value || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 }
 
-function imageTag(item, loading = "lazy") {
+function imageTag(item, loading = "eager") {
   return `<img src="${escapeAttr(item.poster)}" alt="${escapeAttr(item.title)}" loading="${loading}" decoding="async">`;
 }
 
